@@ -3,6 +3,14 @@ h1 {
     text-align: center;
 }
 
+nav {
+    width: auto;
+    max-width: 500px;
+    background-color: salmon;
+    margin: 16px auto; /* 16px top and bottom. Left and Right auto */
+    /* 16px auto 32px. This would be 16px top, left right auto, 32px bottom */
+}
+
 article {
     width: auto;
     max-width: 600px;
@@ -19,6 +27,10 @@ p {
     background-color: #eeeeee; /* Can also use hex */
 }
 
+a:hover, a:focus {
+    color: crimson;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
     border: 0;
@@ -26,7 +38,7 @@ p {
     clip-path: inset(50%);
     height: 1px;
     margin: -1px;
-    overflow: hidden;
+    overflow: hidden; 
     padding: 0;
     position: absolute;
     width: 1px;
@@ -53,4 +65,19 @@ p {
 .hide-me {
     list-style: none;
     height: 0;
+}
+
+.overflow-hidden { /* Playing with overflow */
+    overflow: hidden;
+    height: 35px;
+}
+
+.overflow-visible {
+    overflow: visible;
+    height: 35px;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    height: 75px;
 }
