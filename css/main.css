@@ -11,6 +11,20 @@ nav {
     /* 16px auto 32px. This would be 16px top, left right auto, 32px bottom */
 }
 
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a:hover, a:focus {
+    text-decoration: none; /* This removes underline */
+    color: crimson;
+}
+
 article {
     width: auto;
     max-width: 600px;
@@ -25,10 +39,6 @@ p {
     line-height: 1.5;
     color: rgb( 33, 33, 33); /* There are a few ways to do color... */
     background-color: #eeeeee; /* Can also use hex */
-}
-
-a:hover, a:focus {
-    color: crimson;
 }
 
 /* Text meant only for screen readers. */
