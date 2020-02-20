@@ -1,13 +1,20 @@
+h1 {
+    font-family: "Times New Roman", Georgia, serif; /* " " Means it's one font */
+    text-align: center;
+}
+
+article {
+    width: auto;
+    max-width: 600px;
+    margin-left: auto; /* Margin left and right as auto will centre a BLOCK level element! */
+    margin-right: auto;
+    padding: 16px;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif; /* Finds the first font install on computer */
     font-size: 15px;
     line-height: 1.5;
     color: rgb( 33, 33, 33); /* There are a few ways to do color... */
     background-color: #eeeeee; /* Can also use hex */
-}
-
-article {
-    width: 600px;
-    margin-left: auto; /* Margin left and right as auto will centre a BLOCK level element! */
-    margin-right: auto;
 }
