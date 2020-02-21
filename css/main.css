@@ -35,6 +35,7 @@ nav {
     left: 0;
     right: 0;
     bottom: auto;
+    z-index: 2;
 }
 
 nav ul {
@@ -89,7 +90,7 @@ p {
     right: 0;
     left: 0;
     margin: auto;
-    z-index: -1;
+    z-index: -1; /* Visual layering! Think Photoshop... which element should appear "on-top"?! */
 }
 
 /* Text meant only for screen readers. */
