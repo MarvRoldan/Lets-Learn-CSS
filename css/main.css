@@ -1,3 +1,9 @@
+* { /* Browser reset */
+    box-sizing: border-box; /* Up to the border */
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: "Times New Roman", Georgia, serif; /* " " Means it's one font */
     text-align: center;
@@ -9,6 +15,8 @@ nav {
     background-color: salmon;
     margin: 16px auto; /* 16px top and bottom. Left and Right auto */
     /* 16px auto 32px. This would be 16px top, left right auto, 32px bottom */
+    position: fixed;
+    top: 0;
 }
 
 nav ul {
