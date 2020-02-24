@@ -59,7 +59,7 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 32px;
     font-family: 'Odibee Sans', 'JetBrains Mono', monospace; 
     font-weight: bold;
     text-align: center;
@@ -67,7 +67,7 @@ h1 {
 }
 
 h1, h2 {
-    font-size: 50px;
+    font-size: 32px;
     text-align: center;
     padding-top: 50px;
 }
@@ -232,9 +232,53 @@ p {
 
 #social-media-links > li { /* ">" Direct child only will get hit. */
     display: inline-block;
+    margin: 8px; /* Observe! Margin collapse - the largest, when interacting, wins! */
 }
 
 #social-media-links .fab {
-    color: rgba( 50, 50, 50, 1); /* Alpha for opacity */ 
+    color: rgba( 50, 50, 50, 1) ; /* RGBA - the "a" stands for ALPHA channel. */
+    /* For alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark is as semi-transparent. */
     font-size: 32px;
+}
+
+#social-media-links a:hover .fab, /* DON'T FORGET THE "," */
+#social-media-links a:focus .fab,
+#social-media-links a:active .fab { /* Psuedo-selector with nesting */
+    color: rgba( 50, 50, 50, 0.5 );
+}
+
+@media screen and ( min-width: 500px ) {
+    body {
+        background: red;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
+
+@media screen and ( min-width: 1024px ) {
+    body {
+        background: green;
+    }
+    
+    h1 {
+        font-size: 64px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
 }
