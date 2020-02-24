@@ -1,8 +1,45 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf' ); /* EI compatible */
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf') format( 'truetyle' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf' ); 
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf') format( 'truetyle' );
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.ttf' ); 
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.ttf') format( 'truetyle' );
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Italic.ttf' ); 
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Italic.ttf') format( 'truetyle' );
+    font-weight: normal;
+    font-style: italic;
+}
+
 * { /* Basic browser reset */
     box-sizing: border-box; /* Up to the border */
     margin: 0;
     padding: 0;
     font-size: 16px; /* Default font size */
+}
+
+code {
+    white-space: pre;
+    font-family: 'JetBrains Mono', Consolas, monospace;
 }
 
 body {
