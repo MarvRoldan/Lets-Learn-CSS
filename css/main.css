@@ -51,7 +51,7 @@ code {
 }
 
 body {
-    background-image: url( '../img/space\ background.jpg' ); /* Go  back one level */
+    background-image: url( '../img/paper-background.webp' ); /* Go  back one level */
     background-size: cover; /* Cover the whole element */
     background-repeat: no-repeat; /*Show one of the image, instead of unlimited titles. */
     background-attachment: fixed;
@@ -223,4 +223,18 @@ p {
     left: 0;
     width: 32px;
     height: 32px;
+}
+
+#social-media-links {
+    list-style: none;
+    text-align: center;
+}
+
+#social-media-links > li { /* ">" Direct child only will get hit. */
+    display: inline-block;
+}
+
+#social-media-links .fab {
+    color: rgba( 50, 50, 50, 1); /* Alpha for opacity */ 
+    font-size: 32px;
 }
