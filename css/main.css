@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap'); /* Imported from Google */
+
 @font-face {
     font-family: 'JetBrains Mono';
     src: url( '../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf' ); /* EI compatible */
@@ -8,8 +10,14 @@
 
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf' ); 
-    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf') format( 'truetyle' );
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf'); 
+    src: /* Youn would want to have all the main formats in each @font-face! */
+        url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.woff') 
+        format( 'woff' ),
+        url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf') 
+        format( 'truetyle' ),
+        url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.svg') 
+        format( 'svg' );
     font-weight: bold;
     font-style: normal;
 }
@@ -49,9 +57,17 @@ body {
     background-attachment: fixed;
     /* background-position: top right; Can use x,y and even -numbers */
 }
+
+h1 {
+    font-size: 50px;
+    font-family: 'Odibee Sans', 'JetBrains Mono', monospace; 
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
 h1, h2 {
     font-size: 50px;
-    font-family: "Times New Roman", Georgia, serif; /* " " Means it's one font */
     text-align: center;
     padding-top: 50px;
 }
