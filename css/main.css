@@ -145,8 +145,29 @@ p {
 }
 
 #background-bullets, /* For readability */
-#background-images {
-    list-style: none;
+#image-bullets {
+    list-style: none; /* No bullets */
     margin: 16px auto;
-    padding: 16px 16px 16px 64px;
+    padding: 16px;
+}
+
+#background-bullets li {
+    background-image: url( '../img/teeth-1670434_960_720.webp');
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: top left;
+    padding: 8px 8px 8px 64px;
+}
+
+#image-bullets li{
+    position: relative;
+    padding: 8px 8px 8px 64px;
+}
+
+#image-bullets li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
 }
