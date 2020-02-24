@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'JetBrains Mono';
     src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf'); 
-    src: /* Youn would want to have all the main formats in each @font-face! */
+    src: /* You would want to have all the main formats in each @font-face! */
         url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.woff') 
         format( 'woff' ),
         url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf') 
