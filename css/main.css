@@ -245,8 +245,10 @@ p {
     position: relative;
 }
 
-.speech-bubble::after { 
+.speech-bubble::after { /* DOUBLE colon is a PSEUDO ELEMENT. This is a fake element... keep in mind its content cannot be read by screen-reader or search engines --> ONLY use it for PURELY visual text with no omportance/meaning. */
+    /* Pseudo-elements require the "content" property. */
     content: '';
+    /* Start triangle. */
     display: block;
     width: 0;
     height: 0;
@@ -255,6 +257,8 @@ p {
     border-right: 32px solid rgba( 225, 225, 225, 0.95 );
     border-bottom: 32px solid transparent;
     border-left: 0 solid transparent;
+    /* End triangle. */
+    /* POsition it at the bottom right corner. */
     position: absolute;
     top: 100%;
     right: 0;
