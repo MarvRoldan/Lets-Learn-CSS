@@ -341,12 +341,12 @@ p {
     cursor: pointer;
 }
 
-.transition-transform div + div {
+.transition-transform div + div { /* Find a div BESIDE a div... this is a "directly-followed-by" sibling selector. */
     background-color: lawngreen;
-    position: none;
+    pointer-events: none;
 }
 
-.transition-transform div:hover + div {
+.transition-transform div:hover + div { /* Now we're comvining out pseudo (state) selector for hover, and telling the FOLLOWING div how to behave! */
     transform: 
         translate( 100px, -50px )
         rotate( 35deg )
