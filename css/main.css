@@ -287,9 +287,9 @@ p {
 }
 
 @media screen and ( min-width: 500px ) {
-    body {
+    /* body {
         background: red;
-    }
+    } */
 
     h1 {
         font-size: 64px;
@@ -305,9 +305,9 @@ p {
 }
 
 @media screen and ( min-width: 1024px ) {
-    body {
+    /* body {
         background: green;
-    }
+    } */
     
     h1 {
         font-size: 64px;
